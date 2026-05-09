@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WIN4SMEs — Best Practices for Workplace Innovation</title>
+  <meta name="description" content="13 selected best practices for workplace innovation in SMEs from 9 European countries. WIN4SMEs EU Project." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ====================================================
+       HEADER
+  ==================================================== -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo-strip">
+        <img src="assets/Logo-2025.png" alt="WIN4SMEs" id="logo-win4smes" />
+        <div class="logo-divider"></div>
+        <img src="assets/cove-polska-logo.png" alt="COVE Polska" id="logo-cove" />
+        <div class="logo-divider"></div>
+        <img src="assets/EN_co_fundedvertical_RGB_Monochrome.png"
+             alt="Co-funded by the European Union"
+             id="logo-eu"
+             class="eu-logo-header" />
+      </div>
+
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#practices" data-i18n="nav_practices">Best Practices</a>
+        <a href="#about" data-i18n="nav_about">About Project</a>
+        <a href="#methodology" data-i18n="nav_methodology">Methodology</a>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Language selection">
+        <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
+        <button class="lang-btn active" id="btn-pl" onclick="setLang('pl')" aria-pressed="true">PL</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ====================================================
+       HERO
+  ==================================================== -->
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-tag">WIN4SMEs · WP3 Milestone 9 · June 2025</div>
+        <h1 id="hero-heading" data-i18n="hero_title">Workplace Innovation for SMEs</h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          13 selected best practices from 9 European countries — proven approaches to transform your organization.
+        </p>
+        <div class="hero-meta">
+          <span class="hero-badge">
+            <strong>9</strong>
+            <span data-i18n="hero_countries">countries</span>
+          </span>
+          <span class="hero-badge">
+            <strong>20</strong>
+            <span data-i18n="hero_partners">partner organizations</span>
+          </span>
+        </div>
+      </div>
+
+      <div class="hero-stats" aria-label="Project statistics">
+        <div class="stat-card">
+          <div class="stat-num" data-target="78" id="stat-78">78</div>
+          <div class="stat-label" data-i18n="hero_collected">Practices Collected</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="25" id="stat-25">25</div>
+          <div class="stat-label" data-i18n="hero_evaluated">Pre-evaluated</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num" data-target="13" id="stat-13">13</div>
+          <div class="stat-label" data-i18n="hero_selected">Final Selection</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FILTER BAR
+  ==================================================== -->
+  <section class="filter-section" id="practices" aria-label="Filter and search">
+    <div class="container">
+      <div class="filter-header">
+        <h2 data-i18n="filter_title">Explore Best Practices</h2>
+        <span class="result-count" id="result-count" aria-live="polite"></span>
+      </div>
+
+      <div class="filter-controls">
+        <div class="search-wrap">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+          </svg>
+          <input
+            type="search"
+            class="search-input"
+            id="search-input"
+            data-i18n-placeholder="filter_search"
+            placeholder="Search practices..."
+            aria-label="Search best practices"
+          />
+        </div>
+
+        <select class="filter-select" id="country-filter" aria-label="Filter by country">
+          <option value="" data-i18n="filter_all_countries">All Countries</option>
+          <option value="Denmark">🇩🇰 Denmark</option>
+          <option value="Finland">🇫🇮 Finland</option>
+          <option value="France">🇫🇷 France</option>
+          <option value="Germany">🇩🇪 Germany</option>
+          <option value="Hungary">🇭🇺 Hungary</option>
+          <option value="Lithuania">🇱🇹 Lithuania</option>
+          <option value="Netherlands">🇳🇱 Netherlands</option>
+          <option value="Poland">🇵🇱 Poland</option>
+        </select>
+      </div>
+
+      <div class="category-pills" id="category-pills" role="group" aria-label="Filter by category">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       PRACTICES GRID
+  ==================================================== -->
+  <main class="practices-section">
+    <div class="container">
+      <div class="practices-grid" id="practices-grid" role="list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ====================================================
+       ABOUT SECTION
+  ==================================================== -->
+  <section class="section section--alt" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content">
+          <p class="section-label">WIN4SMEs</p>
+          <h2 id="about-heading" data-i18n="about_title">About the WIN4SMEs Project</h2>
+          <p data-i18n="about_text">
+            WIN4SMEs is a European development initiative that brings together vocational education providers,
+            higher education institutions, and business support organizations to strengthen workplace innovation
+            in small and medium-sized enterprises (SMEs). SMEs make up 99% of all businesses in the EU
+            and provide around 70% of all jobs.
+          </p>
+          <p data-i18n="about_text2">
+            With 20 partners from 9 countries, WIN4SMEs is establishing Centres of Vocational Excellence (CoVEs)
+            across Europe, building a broad learning network that merges research, practical skills,
+            and business development expertise.
+          </p>
+        </div>
+
+        <div class="about-stats" aria-label="Key statistics">
+          <div class="about-stat">
+            <div class="num">99%</div>
+            <div class="lbl" data-i18n="about_stat1">of EU businesses are SMEs</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">70%</div>
+            <div class="lbl" data-i18n="about_stat2">of EU jobs provided by SMEs</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">20</div>
+            <div class="lbl" data-i18n="about_stat3">partner organizations</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">9</div>
+            <div class="lbl" data-i18n="about_stat4">European countries</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       METHODOLOGY SECTION
+  ==================================================== -->
+  <section class="methodology section" id="methodology" aria-labelledby="method-heading">
+    <div class="container">
+      <div class="method-header">
+        <p class="section-label">Process</p>
+        <h2 id="method-heading" data-i18n="method_title">Selection Methodology</h2>
+        <p data-i18n="method_subtitle">13 practices selected through a rigorous 4-step evaluation process</p>
+      </div>
+
+      <div class="method-steps" role="list">
+        <div class="method-step" role="listitem">
+          <div class="step-icon" aria-hidden="true">1</div>
+          <h3 data-i18n="method_step1_title">Understanding WPI</h3>
+          <p data-i18n="method_step1_desc">Preliminary data collection from all partners on how they define workplace innovation.</p>
+        </div>
+        <div class="method-step" role="listitem">
+          <div class="step-icon" aria-hidden="true">2</div>
+          <h3 data-i18n="method_step2_title">Collecting Practices</h3>
+          <p data-i18n="method_step2_desc">78 best practices submitted by partners via e-form and compiled in a structured template.</p>
+        </div>
+        <div class="method-step" role="listitem">
+          <div class="step-icon" aria-hidden="true">3</div>
+          <h3 data-i18n="method_step3_title">Pre-evaluation</h3>
+          <p data-i18n="method_step3_desc">25 practices shortlisted by an independent evaluation team based on agreed criteria.</p>
+        </div>
+        <div class="method-step" role="listitem">
+          <div class="step-icon" aria-hidden="true">4</div>
+          <h3 data-i18n="method_step4_title">Final Selection</h3>
+          <p data-i18n="method_step4_desc">13 practices chosen during a workshop in Kolding, Denmark through collaborative voting.</p>
+        </div>
+      </div>
+
+      <p class="section-label" data-i18n="criteria_title">Evaluation Criteria</p>
+      <div class="criteria-grid" id="criteria-grid" role="list">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================
+       FOOTER
+  ==================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logos" aria-label="Partner logos">
+            <img src="assets/Logo-2025.png" alt="WIN4SMEs" />
+            <img src="assets/cove-polska-logo.png" alt="COVE Polska" />
+            <img src="assets/EN_co_fundedvertical_RGB_Monochrome.png"
+                 alt="Co-funded by the European Union"
+                 id="footer-eu-logo"
+                 class="eu-logo" />
+          </div>
+          <p class="footer-funded" data-i18n="footer_funded">
+            Co-funded by the European Union. Views and opinions expressed are those of the authors only
+            and do not necessarily reflect those of the European Union or EACEA.
+          </p>
+        </div>
+        <div>
+          <a href="Milestone09_Workplace-Innovation-for-SMEs_Template-Best-Practices.pdf"
+             class="footer-download"
+             target="_blank"
+             rel="noopener noreferrer"
+             aria-label="Download full report PDF">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span data-i18n="footer_download">Download Full Report (PDF)</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span data-i18n="footer_project">WP3 Milestone 9 · June 2025</span>
+        <span>WIN4SMEs · Erasmus+ CoVE</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ====================================================
+       MODAL
+  ==================================================== -->
+  <div class="modal-backdrop" id="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-title-text">
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <div class="modal-badge" id="modal-badge"></div>
+        <button class="modal-close" id="modal-close" aria-label="Close dialog">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+        <div id="modal-title-text" class="modal-title"></div>
+        <div class="modal-partner-row">
+          <span class="modal-flag" id="modal-flag"></span>
+          <span id="modal-partner-label"></span>
+          <span id="modal-partner-name"></span>
+        </div>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
