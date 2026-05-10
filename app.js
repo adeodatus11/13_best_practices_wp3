@@ -40,7 +40,7 @@ function setLang(lang) {
   // Swap EU logo
   const euSrc = lang === 'pl'
     ? 'assets/PL_Co-fundedbytheEU_RGB_POS.png'
-    : 'assets/EN_co_fundedvertical_RGB_Monochrome.png';
+    : 'assets/EN_Co-fundedbytheEU_RGB_POS.png';
   const euAlt = lang === 'pl' ? 'Współfinansowane przez Unię Europejską' : 'Co-funded by the European Union';
   if (euLogoHeader) { euLogoHeader.src = euSrc; euLogoHeader.alt = euAlt; }
   if (euLogoFooter) { euLogoFooter.src = euSrc; euLogoFooter.alt = euAlt; }
