@@ -41,12 +41,25 @@
         <a href="cove-polska.html" data-i18n="nav_cove">COVE Polska</a>
       </nav>
 
+      <button class="hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false" onclick="toggleMobileNav()">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+
       <div class="lang-switch" role="group" aria-label="Language selection">
         <button class="lang-btn" id="btn-en" onclick="setLang('en')" aria-pressed="false">EN</button>
         <button class="lang-btn active" id="btn-pl" onclick="setLang('pl')" aria-pressed="true">PL</button>
       </div>
     </div>
   </header>
+
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="#practices" data-i18n="nav_practices" onclick="closeMobileNav()">Best Practices</a>
+    <a href="#about" data-i18n="nav_about" onclick="closeMobileNav()">About Project</a>
+    <a href="#methodology" data-i18n="nav_methodology" onclick="closeMobileNav()">Methodology</a>
+    <a href="cove-polska.html" data-i18n="nav_cove">COVE Polska</a>
+  </nav>
 
   <!-- ====================================================
        HERO

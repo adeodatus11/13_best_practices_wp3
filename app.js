@@ -374,6 +374,22 @@ document.addEventListener('keydown', e => {
 });
 
 // ============================================================
+// MOBILE NAV HAMBURGER
+// ============================================================
+function toggleMobileNav() {
+  const nav = document.getElementById('mobile-nav');
+  const btn = document.getElementById('hamburger-btn');
+  const open = nav.classList.toggle('open');
+  btn.setAttribute('aria-expanded', open);
+}
+function closeMobileNav() {
+  const nav = document.getElementById('mobile-nav');
+  const btn = document.getElementById('hamburger-btn');
+  nav.classList.remove('open');
+  btn.setAttribute('aria-expanded', 'false');
+}
+
+// ============================================================
 // SMOOTH SCROLL — offset for sticky header + filter bar
 // ============================================================
 document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
