@@ -179,24 +179,37 @@
     }
     .back-link:hover { text-decoration: underline; }
 
-    /* Logo banner */
-    .cove-logo-banner {
-      background: var(--surface);
-      border-bottom: 1px solid var(--line);
-      padding: 2rem 1.5rem;
+    /* Hero logo */
+    .cove-hero-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+    }
+    .cove-hero-text { flex: 1; min-width: 0; }
+    .cove-hero-logo {
+      flex-shrink: 0;
       display: flex;
       align-items: center;
       justify-content: center;
+      width: 320px;
+      height: 320px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.2);
+      backdrop-filter: blur(8px);
     }
-    .cove-logo-banner img {
-      max-height: 120px;
-      width: auto;
+    .cove-hero-logo img {
+      width: 220px;
+      filter: brightness(0) invert(1);
     }
 
     @media (max-width: 900px) {
       .cove-about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .partners-grid { grid-template-columns: 1fr 1fr; }
-      .cove-logo-banner img { max-height: 80px; }
+      .cove-hero-inner { flex-direction: column; gap: 2rem; }
+      .cove-hero-logo { width: 200px; height: 200px; }
+      .cove-hero-logo img { width: 140px; }
     }
     @media (max-width: 580px) {
       .partners-grid { grid-template-columns: 1fr; }
@@ -241,28 +254,26 @@
     </a>
   </div>
 
-  <!-- COVE POLSKA LOGO BANNER -->
-  <div class="cove-logo-banner">
-    <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" aria-label="COVE Polska website">
-      <img src="assets/cove-polska-logo.png" alt="COVE Polska" />
-    </a>
-  </div>
-
   <!-- HERO -->
   <section class="cove-hero" aria-labelledby="cove-hero-heading">
     <div class="cove-hero-inner">
-      <div class="hero-tag">WIN4SMEs · Polska</div>
-      <h1 id="cove-hero-heading">COVE Polska</h1>
-      <p class="lead">
-        Centrum Doskonałości Kształcenia Zawodowego (CoVE) w Polsce — regionalne partnerstwo łączące edukację, naukę i biznes
-        w celu wzmacniania innowacji w miejscu pracy w małych i średnich przedsiębiorstwach Dolnego Śląska.
-      </p>
-      <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" class="cove-hero-btn">
-        Odwiedź stronę COVE Polska
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
-        </svg>
-      </a>
+      <div class="cove-hero-text">
+        <div class="hero-tag">WIN4SMEs · Polska</div>
+        <h1 id="cove-hero-heading">COVE Polska</h1>
+        <p class="lead">
+          Centrum Doskonałości Kształcenia Zawodowego (CoVE) w Polsce — regionalne partnerstwo łączące edukację, naukę i biznes
+          w celu wzmacniania innowacji w miejscu pracy w małych i średnich przedsiębiorstwach Dolnego Śląska.
+        </p>
+        <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" class="cove-hero-btn">
+          Odwiedź stronę COVE Polska
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+          </svg>
+        </a>
+      </div>
+      <div class="cove-hero-logo" aria-hidden="true">
+        <img src="assets/cove-polska-logo.png" alt="" />
+      </div>
     </div>
   </section>
 
