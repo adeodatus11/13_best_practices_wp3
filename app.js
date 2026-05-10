@@ -374,6 +374,42 @@ document.addEventListener('keydown', e => {
 });
 
 // ============================================================
+// SMOOTH SCROLL — offset for sticky header + filter bar
+// ============================================================
+document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (!href || href === '#') return;
+    const targetId = href.slice(1);
+    const target = document.getElementById(targetId);
+    if (!target) return;
+    e.preventDefault();
+
+    const header = document.querySelector('.site-header');
+    const filterSection = document.querySelector('.filter-section');
+    const headerH = header ? header.offsetHeight : 0;
+    const filterH = filterSection ? filterSection.offsetHeight : 0;
+
+    // Walk offsetParent chain to get absolute document position
+    let absoluteTop = 0;
+    let el = target;
+    while (el && el !== document.body) {
+      absoluteTop += el.offsetTop;
+      el = el.offsetParent;
+    }
+
+    // Sections rendered below the sticky filter bar need extra offset
+    const belowFilter = ['about', 'methodology'];
+    let scrollTarget = absoluteTop - headerH;
+    if (belowFilter.includes(targetId)) {
+      scrollTarget -= filterH;
+    }
+
+    window.scrollTo({ top: Math.max(0, scrollTarget), behavior: 'smooth' });
+  });
+});
+
+// ============================================================
 // INIT
 // ============================================================
 function init() {
