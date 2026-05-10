@@ -179,9 +179,24 @@
     }
     .back-link:hover { text-decoration: underline; }
 
+    /* Logo banner */
+    .cove-logo-banner {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      padding: 2rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cove-logo-banner img {
+      max-height: 120px;
+      width: auto;
+    }
+
     @media (max-width: 900px) {
       .cove-about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
       .partners-grid { grid-template-columns: 1fr 1fr; }
+      .cove-logo-banner img { max-height: 80px; }
     }
     @media (max-width: 580px) {
       .partners-grid { grid-template-columns: 1fr; }
@@ -223,6 +238,13 @@
         <path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/>
       </svg>
       Powrót do Najlepszych Praktyk
+    </a>
+  </div>
+
+  <!-- COVE POLSKA LOGO BANNER -->
+  <div class="cove-logo-banner">
+    <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" aria-label="COVE Polska website">
+      <img src="assets/cove-polska-logo.png" alt="COVE Polska" />
     </a>
   </div>
 
@@ -345,10 +367,13 @@
           <div class="partner-info">
             <h3>Zespół Szkół Zawodowych nr 5 we Wrocławiu</h3>
             <p>
-              Szkoła zawodowa będąca głównym realizatorem projektu po stronie kształcenia zawodowego.
-              ZSZ nr 5 jest bezpośrednim beneficjentem i propagatorem innowacyjnych praktyk wśród
-              uczniów i pracodawców. Pełni kluczową rolę w nawiązywaniu relacji z lokalnymi
-              przedsiębiorstwami i koordynacji działań transferu wiedzy w regionie.
+              Publiczna szkoła ponadpodstawowa z wieloletnią tradycją, kształcąca uczniów w zawodach
+              technicznych i branżowych. Placówka prowadzi naukę w technikum oraz szkołach branżowych
+              I i II stopnia, oferując przygotowanie m.in. w zawodach: fryzjer, kucharz, cukiernik,
+              sprzedawca oraz zawodach usługowych i technicznych. Funkcjonując pod hasłem „Szkoła Mistrzów",
+              szkoła koncentruje się na praktycznym kształceniu, ściśle współpracuje z pracodawcami
+              i realizuje elementy systemu dualnego — uczniowie zdobywają doświadczenie zawodowe już
+              w trakcie nauki.
             </p>
             <span class="partner-link">
               zsz5.edupage.org

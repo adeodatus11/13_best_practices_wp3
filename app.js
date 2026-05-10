@@ -386,9 +386,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
     e.preventDefault();
 
     const header = document.querySelector('.site-header');
-    const filterSection = document.querySelector('.filter-section');
     const headerH = header ? header.offsetHeight : 0;
-    const filterH = filterSection ? filterSection.offsetHeight : 0;
 
     // Walk offsetParent chain to get absolute document position
     let absoluteTop = 0;
@@ -398,12 +396,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
       el = el.offsetParent;
     }
 
-    // Sections rendered below the sticky filter bar need extra offset
-    const belowFilter = ['about', 'methodology'];
-    let scrollTarget = absoluteTop - headerH;
-    if (belowFilter.includes(targetId)) {
-      scrollTarget -= filterH;
-    }
+    const scrollTarget = absoluteTop - headerH;
 
     window.scrollTo({ top: Math.max(0, scrollTarget), behavior: 'smooth' });
   });

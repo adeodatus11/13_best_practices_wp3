@@ -247,9 +247,6 @@ p { color: var(--muted); }
   background: var(--surface);
   border-bottom: 1px solid var(--line);
   padding: 2rem 0 1.5rem;
-  position: sticky;
-  top: 65px;
-  z-index: 90;
 }
 
 .filter-header {
@@ -937,7 +934,6 @@ p { color: var(--muted); }
   .practices-grid { grid-template-columns: 1fr; }
   .method-steps { grid-template-columns: 1fr; }
 
-  .filter-section { top: 55px; }
   .filter-controls { flex-direction: column; }
   .search-wrap { min-width: 100%; }
   .filter-select { min-width: 100%; }
