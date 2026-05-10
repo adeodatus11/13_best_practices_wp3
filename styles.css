@@ -76,6 +76,14 @@ p { color: var(--muted); }
   flex-shrink: 0;
 }
 
+.logo-strip a {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 6px;
+  transition: opacity var(--transition);
+}
+.logo-strip a:hover { opacity: 0.75; }
+
 .logo-strip img {
   height: 40px;
   width: auto;
@@ -832,6 +840,14 @@ p { color: var(--muted); }
   flex-wrap: wrap;
   margin-bottom: 1.5rem;
 }
+
+.footer-logos a {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  transition: opacity var(--transition);
+}
+.footer-logos a:hover { opacity: 0.8; }
 
 .footer-logos img {
   height: 44px;

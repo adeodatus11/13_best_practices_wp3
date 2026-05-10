@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>COVE Polska — Centrum Doskonałości Kształcenia Zawodowego</title>
+  <meta name="description" content="COVE Polska — Centrum Doskonałości Kształcenia Zawodowego w ramach projektu WIN4SMEs. Partnerzy: Politechnika Wrocławska, ZSZ nr 5, Dolnośląska Izba Rzemieślnicza." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ---- Page-specific styles ---- */
+    .cove-hero {
+      background: linear-gradient(135deg, #0D1B3E 0%, #1a3a7c 50%, #003399 100%);
+      color: #fff;
+      padding: 5rem 0 4rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .cove-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .cove-hero-inner {
+      position: relative;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+    .cove-hero .hero-tag {
+      background: rgba(255,204,0,0.2);
+      color: #FFCC00;
+      border: 1px solid rgba(255,204,0,0.3);
+    }
+    .cove-hero h1 { color: #fff; margin-bottom: 1rem; }
+    .cove-hero p.lead {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.8);
+      max-width: 640px;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .cove-hero-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: #FFCC00;
+      color: #0D1B3E;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.875rem 1.75rem;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .cove-hero-btn:hover { background: #ffe033; transform: translateY(-2px); }
+
+    /* About COVE section */
+    .cove-about { padding: 5rem 0; background: var(--surface); }
+    .cove-about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+    .cove-about h2 { margin-bottom: 1.25rem; }
+    .cove-about p { margin-bottom: 1rem; font-size: 1rem; line-height: 1.75; }
+
+    .cove-pillars {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .pillar-card {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: var(--surface-soft);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+    .pillar-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: var(--eu-blue);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    .pillar-card h4 { font-size: 0.95rem; margin-bottom: 0.25rem; }
+    .pillar-card p { font-size: 0.85rem; margin: 0; }
+
+    /* Partners section */
+    .partners-section { padding: 5rem 0; background: var(--bg); }
+    .partners-header { text-align: center; margin-bottom: 3rem; }
+    .partners-header h2 { margin-bottom: 0.75rem; }
+    .partners-header p { font-size: 1rem; max-width: 560px; margin: 0 auto; }
+
+    .partners-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .partner-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow-card);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+    }
+    .partner-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-hover);
+    }
+
+    .partner-logo-wrap {
+      background: var(--surface-soft);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1.5rem;
+      min-height: 140px;
+      border-bottom: 1px solid var(--line);
+    }
+    .partner-logo-wrap img {
+      max-height: 80px;
+      max-width: 100%;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .partner-info { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+    .partner-info h3 { font-size: 1rem; margin-bottom: 0.5rem; color: var(--ink); }
+    .partner-info p { font-size: 0.875rem; color: var(--muted); line-height: 1.6; flex: 1; }
+
+    .partner-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--eu-blue);
+      margin-top: 1rem;
+      text-decoration: none;
+    }
+    .partner-link:hover { text-decoration: underline; }
+
+    /* Back to main link */
+    .back-bar {
+      background: var(--surface);
+      border-bottom: 1px solid var(--line);
+      padding: 0.75rem 0;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--eu-blue);
+      text-decoration: none;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+    }
+    .back-link:hover { text-decoration: underline; }
+
+    @media (max-width: 900px) {
+      .cove-about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+      .partners-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 580px) {
+      .partners-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <div class="logo-strip">
+        <a href="https://win4smes.eu" target="_blank" rel="noopener noreferrer" aria-label="WIN4SMEs website">
+          <img src="assets/Logo-2025.png" alt="WIN4SMEs" />
+        </a>
+        <div class="logo-divider"></div>
+        <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" aria-label="COVE Polska website">
+          <img src="assets/cove-polska-logo.png" alt="COVE Polska" />
+        </a>
+        <div class="logo-divider"></div>
+        <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" rel="noopener noreferrer" aria-label="EU Funding portal">
+          <img src="assets/EN_co_fundedvertical_RGB_Monochrome.png" alt="Co-funded by the European Union" />
+        </a>
+      </div>
+
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="index.html">Najlepsze Praktyki</a>
+        <a href="index.html#about">O Projekcie</a>
+        <a href="index.html#methodology">Metodologia</a>
+        <a href="cove-polska.html" style="color: var(--eu-blue); font-weight: 600;">COVE Polska</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- BACK BAR -->
+  <div class="back-bar">
+    <a href="index.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/>
+      </svg>
+      Powrót do Najlepszych Praktyk
+    </a>
+  </div>
+
+  <!-- HERO -->
+  <section class="cove-hero" aria-labelledby="cove-hero-heading">
+    <div class="cove-hero-inner">
+      <div class="hero-tag">WIN4SMEs · Polska</div>
+      <h1 id="cove-hero-heading">COVE Polska</h1>
+      <p class="lead">
+        Centrum Doskonałości Kształcenia Zawodowego (CoVE) w Polsce — regionalne partnerstwo łączące edukację, naukę i biznes
+        w celu wzmacniania innowacji w miejscu pracy w małych i średnich przedsiębiorstwach Dolnego Śląska.
+      </p>
+      <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" class="cove-hero-btn">
+        Odwiedź stronę COVE Polska
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT COVE -->
+  <section class="cove-about" aria-labelledby="cove-about-heading">
+    <div class="container">
+      <div class="cove-about-grid">
+        <div>
+          <p class="section-label">O inicjatywie</p>
+          <h2 id="cove-about-heading">Czym jest COVE Polska?</h2>
+          <p>
+            Centrum Doskonałości Kształcenia Zawodowego (CoVE — Centre of Vocational Excellence) to europejska
+            inicjatywa tworząca regionalne ekosystemy doskonałości w kształceniu i szkoleniu zawodowym (VET).
+            CoVE łączą instytucje edukacyjne, uczelnie wyższe i partnerów biznesowych w celu dopasowania
+            kompetencji zawodowych do aktualnych i przyszłych potrzeb rynku pracy.
+          </p>
+          <p>
+            COVE Polska działa w ramach europejskiego projektu WIN4SMEs i skupia się na Dolnym Śląsku —
+            regionie o silnych tradycjach przemysłowych i rzemieślniczych. Misją konsorcjum jest transfer
+            najlepszych europejskich praktyk innowacji w miejscu pracy do lokalnych małych i średnich
+            przedsiębiorstw, wzmacniając ich konkurencyjność i zdolność adaptacji.
+          </p>
+          <p>
+            Projekt zakłada bezpośrednią współpracę z ponad 60 MŚP w regionie, oferując warsztaty,
+            materiały szkoleniowe i wsparcie doradcze oparte na 13 najlepszych praktykach wybranych
+            spośród 78 zgłoszonych przez 20 partnerów z całej Europy.
+          </p>
+        </div>
+
+        <div class="cove-pillars">
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">🎓</div>
+            <div>
+              <h4>Doskonałość edukacyjna</h4>
+              <p>Podnoszenie jakości kształcenia zawodowego przez integrację najlepszych europejskich praktyk z programami nauczania.</p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">🏭</div>
+            <div>
+              <h4>Transfer do MŚP</h4>
+              <p>Bezpośredni transfer sprawdzonych innowacji do małych i średnich przedsiębiorstw Dolnego Śląska.</p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">🤝</div>
+            <div>
+              <h4>Partnerstwo regionalne</h4>
+              <p>Budowanie trwałego ekosystemu współpracy między edukacją zawodową, szkolnictwem wyższym i biznesem.</p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">🌍</div>
+            <div>
+              <h4>Wymiar europejski</h4>
+              <p>Uczestnictwo w sieci 20 partnerów z 9 krajów UE — dostęp do wiedzy i praktyk z całej Europy.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNERS -->
+  <section class="partners-section" aria-labelledby="partners-heading">
+    <div class="container">
+      <div class="partners-header">
+        <p class="section-label">Konsorcjum</p>
+        <h2 id="partners-heading">Partnerzy COVE Polska</h2>
+        <p>Trzy instytucje tworzące dolnośląskie Centrum Doskonałości Kształcenia Zawodowego.</p>
+      </div>
+
+      <div class="partners-grid">
+
+        <!-- Partner 1: PWr -->
+        <a href="https://pwr.edu.pl" target="_blank" rel="noopener noreferrer" class="partner-card" aria-label="Politechnika Wrocławska — odwiedź stronę">
+          <div class="partner-logo-wrap">
+            <img src="assets/logo PWr kolor poziom  bez tla.png" alt="Politechnika Wrocławska" />
+          </div>
+          <div class="partner-info">
+            <h3>Politechnika Wrocławska</h3>
+            <p>
+              Wiodąca uczelnia techniczna Dolnego Śląska i jedna z największych politechnik w Polsce.
+              Wnosi do konsorcjum potencjał badawczy, ekspercką wiedzę z zakresu innowacji organizacyjnych
+              oraz bezpośredni kontakt ze środowiskiem akademickim i przemysłowym. W projekcie odpowiada
+              za analizę najlepszych praktyk oraz wsparcie merytoryczne transferu wiedzy do MŚP.
+            </p>
+            <span class="partner-link">
+              pwr.edu.pl
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Partner 2: ZSZ5 -->
+        <a href="https://zsz5.wroc.pl" target="_blank" rel="noopener noreferrer" class="partner-card" aria-label="Zespół Szkół Zawodowych nr 5 — odwiedź stronę">
+          <div class="partner-logo-wrap">
+            <img src="assets/orzeł logo ZSZ5.png" alt="Zespół Szkół Zawodowych nr 5" />
+          </div>
+          <div class="partner-info">
+            <h3>Zespół Szkół Zawodowych nr 5 we Wrocławiu</h3>
+            <p>
+              Szkoła zawodowa będąca głównym realizatorem projektu po stronie kształcenia zawodowego.
+              ZSZ nr 5 jest bezpośrednim beneficjentem i propagatorem innowacyjnych praktyk wśród
+              uczniów i pracodawców. Pełni kluczową rolę w nawiązywaniu relacji z lokalnymi
+              przedsiębiorstwami i koordynacji działań transferu wiedzy w regionie.
+            </p>
+            <span class="partner-link">
+              zsz5.wroc.pl
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+        <!-- Partner 3: DIR -->
+        <a href="https://www.dir.wroc.pl" target="_blank" rel="noopener noreferrer" class="partner-card" aria-label="Dolnośląska Izba Rzemieślnicza — odwiedź stronę">
+          <div class="partner-logo-wrap">
+            <img src="assets/logo_DolnoslaskaIzbaRzemieslnicza.png" alt="Dolnośląska Izba Rzemieślnicza" />
+          </div>
+          <div class="partner-info">
+            <h3>Dolnośląska Izba Rzemieślnicza</h3>
+            <p>
+              Organizacja samorządu gospodarczego reprezentująca rzemiosło i małą przedsiębiorczość
+              na Dolnym Śląsku. Izba jest pomostem między światem edukacji a potrzebami realnych firm —
+              zapewnia dostęp do sieci MŚP, rozumie ich codzienne wyzwania i posiada wieloletnie
+              doświadczenie w organizacji kształcenia dualnego i praktycznego.
+            </p>
+            <span class="partner-link">
+              dir.wroc.pl
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+              </svg>
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div>
+          <div class="footer-logos" aria-label="Partner logos">
+            <a href="https://win4smes.eu" target="_blank" rel="noopener noreferrer" aria-label="WIN4SMEs website">
+              <img src="assets/Logo-2025.png" alt="WIN4SMEs" />
+            </a>
+            <a href="https://covepolska.pl" target="_blank" rel="noopener noreferrer" aria-label="COVE Polska website">
+              <img src="assets/cove-polska-logo.png" alt="COVE Polska" />
+            </a>
+            <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/home" target="_blank" rel="noopener noreferrer" aria-label="EU Funding portal">
+              <img src="assets/EN_co_fundedvertical_RGB_Monochrome.png"
+                   alt="Co-funded by the European Union"
+                   class="eu-logo" />
+            </a>
+          </div>
+          <p class="footer-funded">
+            Współfinansowane przez Unię Europejską. Wyrażone poglądy i opinie są wyłącznie poglądami autorów
+            i niekoniecznie odzwierciedlają stanowisko Unii Europejskiej lub Europejskiej Agencji Wykonawczej
+            ds. Edukacji i Kultury (EACEA).
+          </p>
+        </div>
+        <div>
+          <a href="index.html" class="footer-download">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M19 12H5"/><path d="M12 5l-7 7 7 7"/>
+            </svg>
+            Powrót do Najlepszych Praktyk
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>WP3 Milestone 9 · Czerwiec 2025</span>
+        <span>WIN4SMEs · WP3</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

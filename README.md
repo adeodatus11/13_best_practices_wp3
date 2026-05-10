@@ -87,4 +87,4 @@ https://TWOJA-NAZWA.github.io/win4smes-best-practices/
 
 WIN4SMEs — Workplace Innovation for SMEs  
 WP3 Milestone 9 · Czerwiec 2025  
-Współfinansowane przez Unię Europejską · Program Erasmus+ CoVE
+Współfinansowane przez Unię Europejską
