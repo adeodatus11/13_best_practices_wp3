@@ -14,7 +14,6 @@ Strona internetowa prezentująca 13 najlepszych praktyk innowacji w miejscu prac
 │   ├── cove-polska-logo.png
 │   ├── PL_Co-fundedbytheEU_RGB_POS.png
 │   └── EN_co_fundedvertical_RGB_Monochrome.png
-└── Milestone09_Workplace-Innovation-for-SMEs_Template-Best-Practices.pdf
 ```
 
 ## Uruchomienie lokalnie
@@ -71,7 +70,6 @@ https://TWOJA-NAZWA.github.io/win4smes-best-practices/
 - 📋 Modal ze szczegółami każdej praktyki
 - 📱 Responsywny (mobile, tablet, desktop)
 - ♿ Dostępny (ARIA, nawigacja klawiaturą)
-- 📥 Link do pobrania pełnego raportu PDF
 
 ## Kategorie
 

@@ -267,7 +267,15 @@ function openModal(id) {
       ).join('')}</div>`
     : '';
 
-  // Order: benefits → short desc → steps → conditions → challenges → long desc → example → contact
+  const resourcesHtml = linksHtml
+    ? `
+    <div class="modal-section">
+      <div class="modal-section-title">${t('modal_contact')}</div>
+      <div class="modal-contact">${linksHtml}</div>
+    </div>`
+    : '';
+
+  // Order: benefits → short desc → steps → conditions → challenges → long desc → example → resources
   modalBody.innerHTML = `
     <div class="modal-section">
       <div class="modal-section-title">${t('modal_benefits')}</div>
@@ -304,10 +312,7 @@ function openModal(id) {
       <p class="modal-text">${example}</p>
     </div>
 
-    <div class="modal-section">
-      <div class="modal-section-title">${t('modal_contact')}</div>
-      <div class="modal-contact">${p.contact}${linksHtml}</div>
-    </div>
+    ${resourcesHtml}
   `;
 
   modalBackdrop.classList.add('open');

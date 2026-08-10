@@ -50,7 +50,7 @@ const PRACTICES = [
     challenges_pl: "Logistyka, dostęp do technologii, różnorodność zespołów, ograniczenia czasowe i koordynacja interesariuszy — zarządzane przez proaktywne planowanie i współpracę.",
     example_en: "The AEC Hackathon Wrocław Edition was successfully held at Wrocław University of Science and Technology, producing 5–10 functional prototypes addressing real AEC industry challenges.",
     example_pl: "Wrocławska edycja AEC Hackathon odbyła się z powodzeniem na Politechnice Wrocławskiej, tworząc 5–10 funkcjonalnych prototypów odpowiadających na realne wyzwania branży AEC.",
-    contact: "tomasz.nowobilski@pwr.edu.pl",
+    contact: "",
     links: [
       { label: "AEC Hackathon Wrocław", url: "https://hack.creoox.com" },
       { label: "AEC Hackathon Community", url: "https://hackaec.com/" }
@@ -101,7 +101,7 @@ const PRACTICES = [
     challenges_pl: "Wywiady z ekspertami muszą być dobrze przygotowane, aby zapewnić jakość i trafność generowanych treści edukacyjnych.",
     example_en: "Successfully applied in a construction company covering civil engineering and track construction, significantly reducing onboarding time for new employees.",
     example_pl: "Z powodzeniem zastosowano w firmie budowlanej obejmującej inżynierię lądową i budownictwo torowe, znacząco skracając czas onboardingu nowych pracowników.",
-    contact: "Patrick Krüger: patrick.krueger@falkenhahn.de | Gabriele Riedmann de Trinidad: gabriele.riedmanndetrinidad@platform3l.com",
+    contact: "",
     links: [
       { label: "Platform3L", url: "https://www.platform3l.com" },
       { label: "Falkenhahn AG", url: "https://sws-maler.de" }
@@ -154,7 +154,7 @@ const PRACTICES = [
     challenges_pl: "Niska frekwencja spowodowana ograniczeniami czasowymi lub początkowo ograniczonym zainteresowaniem. Utrzymanie wysokiej jakości angażujących treści dopasowanych do napiętego harmonogramu.",
     example_en: "A lecture titled \"Psychological Crisis and Suicide Risk: Understand – Recognize – Act\" was offered both in-person and online, led by an experienced psychologist. The session covered how to identify and respond to signs of psychological crisis.",
     example_pl: "Wykład pt. \"Kryzys psychologiczny i ryzyko samobójstwa: Zrozum – Rozpoznaj – Działaj\" był dostępny zarówno stacjonarnie, jak i online, prowadzony przez doświadczonego psychologa.",
-    contact: "Psychological Counseling Department, Mykolas Romeris University | pks@mruni.eu",
+    contact: "",
     links: []
   },
   {
@@ -170,8 +170,8 @@ const PRACTICES = [
     partner_pl: "Katapult, Holandia",
     short_en: "A revolutionary homecare model using small self-managing teams of 6–12 nurses delivering holistic, personalized care — reducing costs, improving outcomes, and boosting nurse autonomy.",
     short_pl: "Rewolucyjny model opieki domowej oparty na małych, samozarządzających się zespołach 6–12 pielęgniarek dostarczających holistyczną, spersonalizowaną opiekę — obniżając koszty i zwiększając autonomię.",
-    description_en: "In the traditional homecare model, a patient might receive visits from seven different nurses in a single week — each specialized in one specific task (wound dressing, medication, bathing), each working under a central dispatcher, each logging time against fragmented billing codes. The patient experiences no continuity of care, no human relationship, and no sense that anyone understands their full situation. The nurses experience no professional autonomy, overwhelming administrative burden, and high burnout. The system is simultaneously expensive and dehumanizing.\n\nIn 2006, Dutch nurse Jos de Blok founded Buurtzorg (meaning \"neighborhood care\") as a direct response to this dysfunction. The radical insight: give small teams of nurses full professional autonomy over a defined set of clients, remove the management hierarchy, and trust them to organize themselves. Teams of 6–12 nurses take collective responsibility for approximately 60 patients in their local neighborhood — they handle care planning, scheduling, quality control, administration, and even hiring, without a manager above them. A professional coach (not a supervisor) is available per 40 teams for guidance when needed.\n\nThe organizing framework is the Buurtzorg Onion Model: when addressing a patient's needs, the team always starts from the center (what can the patient do independently?) and works outward through informal networks (family, neighbors, volunteers) before adding professional nursing hours. The goal is always to maximize patient independence and shrink the role of professional care over time — an approach that is both more humane and far cheaper than dependency-creating traditional care.\n\nThe results at scale are remarkable. Buurtzorg grew from 4 nurses in 2006 to over 15,000 serving 100,000+ patients, with only 50 back-office staff. Patients require 40% fewer care hours than under traditional models. Dutch nurse job satisfaction surveys consistently place Buurtzorg at the top. The model has been adapted in 24+ countries across healthcare and inspired organizational redesign far beyond nursing — from social work to education administration.",
-    description_pl: "W tradycyjnym modelu opieki domowej pacjent może otrzymywać wizyty od siedmiu różnych pielęgniarek w ciągu jednego tygodnia — każda wyspecjalizowana w jednym konkretnym zadaniu, każda pracująca pod centralnym dyspozytorem. Pacjent nie doświadcza ciągłości opieki ani relacji ludzkiej. Pielęgniarki nie mają autonomii zawodowej i borykają się z ogromnym obciążeniem administracyjnym.\n\nW 2006 roku holenderska pielęgniarka Jos de Blok założył Buurtzorg (\"opieka sąsiedzka\") jako bezpośrednią odpowiedź na tę dysfunkcję. Radykalny wgląd: daj małym zespołom pielęgniarek pełną autonomię zawodową nad określoną grupą pacjentów, usuń hierarchię zarządzania i ufaj, że się samoorganizują. Zespoły 6–12 pielęgniarek zbiorowo odpowiadają za około 60 pacjentów w swoim lokalnym sąsiedztwie — bez menedżera powyżej nich.\n\nRamą organizacyjną jest Model Cebuli Buurtzorg: przy adresowaniu potrzeb pacjenta zespół zawsze zaczyna od centrum (co pacjent może zrobić samodzielnie?) i pracuje na zewnątrz przez sieci nieformalne (rodzina, sąsiedzi, wolontariusze) przed dodaniem profesjonalnych godzin pielęgniarskich. Celem jest zawsze maksymalizacja niezależności pacjenta — podejście zarówno bardziej humanitarne, jak i znacznie tańsze.\n\nWyniki w skali są niezwykłe: Buurtzorg urósł od 4 pielęgniarek w 2006 do ponad 15 000, obsługując 100 000+ pacjentów, z tylko 50 pracownikami biurowymi. Pacjenci potrzebują o 40% mniej godzin opieki niż w tradycyjnych modelach. Model zaadaptowano w ponad 24 krajach i zainspirował on reorganizację daleko poza pielęgniarstwem.",
+    description_en: "In the traditional homecare model, a patient might receive visits from seven different nurses in a single week — each specialized in one specific task (wound dressing, medication, bathing), each working under a central dispatcher, each logging time against fragmented billing codes. The patient experiences no continuity of care, no human relationship, and no sense that anyone understands their full situation. The nurses experience no professional autonomy, overwhelming administrative burden, and high burnout. The system is simultaneously expensive and dehumanizing.\n\nIn 2006, Buurtzorg (meaning \"neighborhood care\") was founded as a direct response to this dysfunction. The radical insight: give small teams of nurses full professional autonomy over a defined set of clients, remove the management hierarchy, and trust them to organize themselves. Teams of 6–12 nurses take collective responsibility for approximately 60 patients in their local neighborhood — they handle care planning, scheduling, quality control, administration, and even hiring, without a manager above them. A professional coach (not a supervisor) is available per 40 teams for guidance when needed.\n\nThe organizing framework is the Buurtzorg Onion Model: when addressing a patient's needs, the team always starts from the center (what can the patient do independently?) and works outward through informal networks (family, neighbors, volunteers) before adding professional nursing hours. The goal is always to maximize patient independence and shrink the role of professional care over time — an approach that is both more humane and far cheaper than dependency-creating traditional care.\n\nThe results at scale are remarkable. Buurtzorg grew from 4 nurses in 2006 to over 15,000 serving 100,000+ patients, with only 50 back-office staff. Patients require 40% fewer care hours than under traditional models. Dutch nurse job satisfaction surveys consistently place Buurtzorg at the top. The model has been adapted in 24+ countries across healthcare and inspired organizational redesign far beyond nursing — from social work to education administration.",
+    description_pl: "W tradycyjnym modelu opieki domowej pacjent może otrzymywać wizyty od siedmiu różnych pielęgniarek w ciągu jednego tygodnia — każda wyspecjalizowana w jednym konkretnym zadaniu, każda pracująca pod centralnym dyspozytorem. Pacjent nie doświadcza ciągłości opieki ani relacji ludzkiej. Pielęgniarki nie mają autonomii zawodowej i borykają się z ogromnym obciążeniem administracyjnym.\n\nW 2006 roku Buurtzorg (\"opieka sąsiedzka\") powstał jako bezpośrednia odpowiedź na tę dysfunkcję. Radykalny wgląd: daj małym zespołom pielęgniarek pełną autonomię zawodową nad określoną grupą pacjentów, usuń hierarchię zarządzania i ufaj, że się samoorganizują. Zespoły 6–12 pielęgniarek zbiorowo odpowiadają za około 60 pacjentów w swoim lokalnym sąsiedztwie — bez menedżera powyżej nich.\n\nRamą organizacyjną jest Model Cebuli Buurtzorg: przy adresowaniu potrzeb pacjenta zespół zawsze zaczyna od centrum (co pacjent może zrobić samodzielnie?) i pracuje na zewnątrz przez sieci nieformalne (rodzina, sąsiedzi, wolontariusze) przed dodaniem profesjonalnych godzin pielęgniarskich. Celem jest zawsze maksymalizacja niezależności pacjenta — podejście zarówno bardziej humanitarne, jak i znacznie tańsze.\n\nWyniki w skali są niezwykłe: Buurtzorg urósł od 4 pielęgniarek w 2006 do ponad 15 000, obsługując 100 000+ pacjentów, z tylko 50 pracownikami biurowymi. Pacjenci potrzebują o 40% mniej godzin opieki niż w tradycyjnych modelach. Model zaadaptowano w ponad 24 krajach i zainspirował on reorganizację daleko poza pielęgniarstwem.",
     benefits_en: [
       "Enhanced patient satisfaction and health outcomes through personalized, holistic care.",
       "Increased nurse autonomy and job satisfaction.",
@@ -206,7 +206,7 @@ const PRACTICES = [
     challenges_pl: "Opór ze strony tradycyjnych struktur zarządzania. Trudności ze skalowaniem przy zachowaniu autonomii. Adaptacja do różnych systemów finansowania opieki zdrowotnej.",
     example_en: "In Sweden, Buurtzorg partnered with local organizations in Stockholm. Pilot teams showed increased patient satisfaction and reduced care costs, inspiring broader adoption in Germany, the UK, and the US.",
     example_pl: "W Szwecji Buurtzorg nawiązał współpracę z lokalnymi organizacjami w Sztokholmie. Pilotażowe zespoły wykazały wyższą satysfakcję pacjentów i niższe koszty opieki, co zainspirowało szersze wdrożenia w Niemczech, Wielkiej Brytanii i USA.",
-    contact: "info@buurtzorg.org",
+    contact: "",
     links: [
       { label: "Buurtzorg International", url: "https://www.buurtzorg.com" }
     ]
@@ -260,7 +260,7 @@ const PRACTICES = [
     challenges_pl: "Problemy z koordynacją, gdy stacje robocze są ograniczone. Ryzyko zmniejszonej komunikacji z powodu pracy zdalnej. Potrzeba wyznaczonego koordynatora do zarządzania stanowiskami pracy.",
     example_en: "The concept was successfully implemented and evaluated in a BHH partner company as part of a student project. Employees reported improved communication and greater satisfaction with their workspace.",
     example_pl: "Koncepcja została z powodzeniem wdrożona i oceniona w firmie partnerskiej BHH w ramach projektu studenckiego. Pracownicy zgłosili poprawę komunikacji i większą satysfakcję z przestrzeni roboczej.",
-    contact: "Halina Ziehmer | halina.ziehmer@bhh.hamburg.de | Tel: 040 428 791 175",
+    contact: "",
     links: []
   },
   {
@@ -312,7 +312,7 @@ const PRACTICES = [
     challenges_pl: "Kulturowa zmiana z kontroli na zaufanie. Potrzeba ustrukturyzowanego zarządzania zmianą i szkoleń. Zapewnienie wydajności i dobrostanu poprzez jasne cele i regularne spotkania.",
     example_en: "The model was successfully piloted in a BHH partner company and evaluated through a student project. Employee satisfaction scores improved significantly after implementation.",
     example_pl: "Model został z powodzeniem pilotażowo wdrożony w firmie partnerskiej BHH i oceniony w ramach projektu studenckiego. Wyniki satysfakcji pracowników znacząco wzrosły po wdrożeniu.",
-    contact: "Halina Ziehmer | halina.ziehmer@bhh.hamburg.de | Tel: 040 428 791 175",
+    contact: "",
     links: []
   },
   {
@@ -370,7 +370,7 @@ const PRACTICES = [
     challenges_pl: "Zmieniające się trendy migracyjne wymagają elastyczności. Cięcia w finansowaniu publicznym wymagają rzecznictwa. Utrzymanie zaangażowania wolontariuszy przez pozytywne narracje.",
     example_en: "At IKEA Utrecht, Dutch-speaking employees meet weekly with non-native colleagues to practice language in real work situations. The program has also been adopted by ASML, Philips, Scania, McDonald's, and ABN-AMRO.",
     example_pl: "W IKEA Utrecht holenderskojęzyczni pracownicy spotykają się co tydzień z nienatywymi kolegami, aby ćwiczyć język w rzeczywistych sytuacjach roboczych. Program przyjęły również ASML, Philips, Scania, McDonald's i ABN-AMRO.",
-    contact: "Eline Dragt: eline@hetbegintmettaal.nl | Sylvia de Groot Heupner: sylvia@hetbegintmettaal.nl",
+    contact: "",
     links: [
       { label: "Taalbuddy", url: "https://www.taalbuddy.nl" },
       { label: "Het Begint met Taal", url: "https://www.hetbegintmettaal.nl" }
@@ -425,7 +425,7 @@ const PRACTICES = [
     challenges_pl: "Przezwyciężanie nieświadomych uprzedzeń i oporu kulturowego. Utrzymanie długoterminowego zaangażowania w dużych, globalnych organizacjach.",
     example_en: "LEGO's inclusive product redesigns and marketing campaigns received global media praise. Similar D&I strategies are successfully implemented by Microsoft, Google, and Unilever.",
     example_pl: "Przeprojektowane inkluzywne produkty i kampanie marketingowe LEGO otrzymały globalną pochwałę mediów. Podobne strategie D&I są z powodzeniem realizowane przez Microsoft, Google i Unilever.",
-    contact: "info@lego.com | +45 79 50 60 70",
+    contact: "",
     links: [
       { label: "LEGO Diversity & Inclusion", url: "https://www.lego.com/fi-fi/diversity" }
     ]
@@ -481,7 +481,7 @@ const PRACTICES = [
     challenges_pl: "Studenci mogą początkowo nie dostrzegać wartości mentoringu. Zachęcanie do proaktywnego uczestnictwa w dziedzinach technicznych może być trudne. Utrzymanie stałej puli mentorów wymaga ciągłego zasięgu.",
     example_en: "A notable success is the return of former mentees as mentors — demonstrating the program's long-term impact. The program is also used by other universities in the Lower Silesian Career Offices Network.",
     example_pl: "Znaczącym sukcesem jest powrót byłych podopiecznych jako mentorów — co świadczy o długoterminowym wpływie programu. Program jest również stosowany przez inne uczelnie w Sieci Biur Karier Dolnego Śląska.",
-    contact: "Katarzyna Sławińska-Oleszek, Head of Career Office | katarzyna.slawinska-oleszek@pwr.edu.pl",
+    contact: "",
     links: [
       { label: "Mentoring Program", url: "https://biurokarier.pwr.edu.pl/student/mentoring/" },
       { label: "Become a Mentor", url: "https://biurokarier.pwr.edu.pl/absolwent/zostan-mentorem/" }
@@ -534,7 +534,7 @@ const PRACTICES = [
     challenges_pl: "Nie zgłoszono znaczących wyzwań. Metoda jest prosta i nie wymaga specjalnych zasobów.",
     example_en: "Companies within the Satakunta Chamber of Commerce network recently adopted this method with positive results in the industrial sector. Several industrial companies in the Satakunta region report improved hiring matches.",
     example_pl: "Firmy z sieci Izby Handlowej Satakunta niedawno przyjęły tę metodę z pozytywnymi wynikami w sektorze przemysłowym. Kilka firm przemysłowych w regionie Satakunta zgłasza lepsze dopasowanie przy zatrudnianiu.",
-    contact: "minna.nore@satakunnankauppakamari.fi | laura.koivisto@satakunnankauppakamari.fi",
+    contact: "",
     links: []
   },
   {
@@ -584,7 +584,7 @@ const PRACTICES = [
     challenges_pl: "Jedyną istotną barierą jest zapewnienie, że kultura firmy jest wystarczająco silna i pozytywna, aby być pokazana autentycznie. Wymuszona lub inscenizowana prezentacja niweczy cel.",
     example_en: "SWS Malermeister GmbH successfully implemented this approach. Their videos generated direct apprenticeship inquiries from young viewers and significantly improved their employer brand.",
     example_pl: "SWS Malermeister GmbH z powodzeniem wdrożyła to podejście. Ich filmy wygenerowały bezpośrednie zapytania o staże od młodych widzów i znacząco poprawiły markę pracodawcy.",
-    contact: "Samim Shirzad | samim@sws-maler.de | Meiendorfer Straße 97, 22145 Hamburg",
+    contact: "",
     links: [
       { label: "SWS Malermeister GmbH", url: "https://sws-maler.de" }
     ]
@@ -640,7 +640,7 @@ const PRACTICES = [
     challenges_pl: "Rozróżnianie między niezamierzonymi błędami (chronionymi) a zamierzonym złym postępowaniem (niechronionym) wymaga jasnych definicji i konsekwentnego stosowania.",
     example_en: "The No-Punishment Charter at Air France led to increased employee engagement, a more open workplace culture, better identification of operational issues, and enhanced organizational performance.",
     example_pl: "Karta Bez Karania w Air France doprowadziła do zwiększonego zaangażowania pracowników, bardziej otwartej kultury miejsca pracy, lepszej identyfikacji problemów operacyjnych i poprawy wyników organizacyjnych.",
-    contact: "Via Hanse Parlament | www.hanseparlament.eu",
+    contact: "",
     links: [
       { label: "Innovation Managériale — Air France", url: "https://www.innovationmanageriale.com/quand-les-entreprises-sinterdisentde-punir-les-erreurs-air france/" }
     ]
@@ -694,7 +694,7 @@ const PRACTICES = [
     challenges_pl: "Wymaga nauczycieli wyszkolonych zarówno w procesach biznesowych, jak i metodach nauczania opartych na symulacji. Wstępna konfiguracja środowiska klasowego wymaga czasu i inwestycji.",
     example_en: "The Deák School has mentored schools in Romania, Slovakia, and Germany through international partnership projects. The model is part of the global PEN Worldwide network, with nearly 100 student enterprises in Hungary alone.",
     example_pl: "Szkoła Deáka opiekowała się szkołami w Rumunii, Słowacji i Niemczech poprzez projekty partnerstwa międzynarodowego. Model jest częścią globalnej sieci PEN Worldwide, z blisko 100 przedsiębiorstwami studenckimi tylko na Węgrzech.",
-    contact: "Ágnes Kovácsné Zimborás | igazgato@deakgyor.hu",
+    contact: "",
     links: [
       { label: "taniroda.hu Platform", url: "https://taniroda.hu/" },
       { label: "PEN Worldwide", url: "https://penworldwide.org/" },
@@ -741,7 +741,7 @@ const I18N = {
     modal_challenges: "Challenges",
     modal_long_desc: "In-Depth Analysis",
     modal_example: "Example of Use",
-    modal_contact: "Contact & Resources",
+    modal_contact: "Resources",
     modal_close: "Close",
     modal_partner: "Reporting Partner",
     about_title: "About the WIN4SMEs Project",
@@ -802,7 +802,7 @@ const I18N = {
     modal_challenges: "Wyzwania",
     modal_long_desc: "Szczegółowy opis",
     modal_example: "Przykład zastosowania",
-    modal_contact: "Kontakt i zasoby",
+    modal_contact: "Zasoby",
     modal_close: "Zamknij",
     modal_partner: "Partner zgłaszający",
     about_title: "O projekcie WIN4SMEs",
